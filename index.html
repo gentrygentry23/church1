@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+
+<!-- Mirrored from wellscentertrade.com/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jul 2023 04:54:24 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wells Center Trade</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link href="vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="h-100">
+    <div class="authincation h-100">
+        <div class="container h-100">
+            <div class="row justify-content-center h-100 align-items-center">
+                <div class="col-md-6">
+                    <div id="login">
+                    <div class="authincation-content">
+                        <div class="row no-gutters">
+                            <div class="col-xl-12">
+                                <div class="auth-form">
+                                    <h1 class="text-center mb-4">Sign in your account</h1>
+                                    <form action="https://wellscentertrade.com/admin/index.html">
+                                        <div class="form-group">
+                                            <label class="mb-1"><strong>Email</strong></label>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Please Enter Email Address">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="mb-1"><strong>Password</strong></label>
+                                            <input type="password" class="form-control" id="password" name="password" value="Password">
+                                        </div>
+                                        <div class="form-row d-flex justify-content-between mt-4 mb-2">
+                                            <div class="form-group">
+                                               <div class="custom-control custom-checkbox ml-1">
+													<input type="checkbox" class="custom-control-input" id="basic_checkbox_1">
+													<label class="custom-control-label" for="basic_checkbox_1">Remember my preference</label>
+												</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a href="forgot_password.html">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="button" onclick="login();" class="btn btn-primary btn-block">Sign Me In</button>
+                                        </div>
+                                    </form>
+                                    <div class="new-account mt-3">
+                                        <p>Don't have an account? <a class="text-primary" href="register.html">Sign up</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/deznav-init.js"></script>
+    <script src="js/block.js"></script>
+    <script src="js/bootbox.min.js"></script>
+    <script src="js/common.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/index.js"></script>
+
+    <script src="vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="js/plugins-init/sweetalert.init.js"></script>
+    <script src="js/admin.js"></script>
+
+<!--<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8a909fcc-10e9-485d-86bf-ea3a7f31f393";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>-->
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDuuGWWqsueWDcKbQAs1qcJ0nRv2rJcEa4",
+      authDomain: "lion-trade-e038a.firebaseapp.com",
+      projectId: "lion-trade-e038a",
+      storageBucket: "lion-trade-e038a.appspot.com",
+      messagingSenderId: "568429232611",
+      appId: "1:568429232611:web:9b241e5348cc09d04de0d6",
+      measurementId: "G-J44TYM14RS"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = firebase();
+    const db = firebase.firestore();
+    db.seting({ timestampsInSnapshots: true})
+  </script>
+
+</body>
+
+
+<!-- Mirrored from wellscentertrade.com/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Jul 2023 04:54:25 GMT -->
+</html>
